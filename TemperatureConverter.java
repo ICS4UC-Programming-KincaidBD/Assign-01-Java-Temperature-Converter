@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * TemperatureConverter from Celcius to Fahrenheit and Kelvin
  * Fahrenheit = (Celcius * 9/5) + 32
@@ -8,16 +10,15 @@
  * @since 26/10/05
  */
 
-import java.util.Scanner;
 public class TemperatureConverter {
 
-    public static void main(String[] args) {
+    private static void main(String[] args) {
         // initialize scanner to read input from user
         Scanner scanner = new Scanner(System.in);
         int celcius;
         // prompt user for temperature in Celcius
         System.out.print("Enter temperature in Celcius: ");
-        // try and catch statement incase the input is not a int or if the input is a string or a float
+        // try and catch statement in case the input is not a int
         try {
             celcius = scanner.nextInt();
         } catch (Exception e) {
